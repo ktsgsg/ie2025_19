@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
         <link href="css/index.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -16,16 +17,16 @@
         <!--header ここから-->
         <header class="header">
             <div class="header-inner">
-                <a class="header-logo" href="index.html">
-                    <img src="images/common/logo.png" alt="ロゴ">
+                <a class="top-link page-link" href="index.html">
+                    トップページへ
                 </a>
                 <button class="toggle-menu-button"></button>
                 <div class="header-site-menu">
                     <nav class="site-menu">
                         <ul>
-                            <li><a href="concept.html">コンセプト</a></li>
-                            <li><a href="members.html">メンバー</a></li>
-                            <li><a href="access.html">アクセス</a></li>
+                            <li><a class = "page-link" href="concept.html">登山</a></li>
+                            <li><a class = "page-link" href="members.html">ハンドボール</a></li>
+                            <li><a class = "page-link" href="access.html">海外渡航</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,31 +36,39 @@
         <main class="main">
             <nav class="floating">
                 <ul>
-                    <li><a href="#">トップ</a></li>
+
                 </ul>
             </nav>
-            <div class="first-view">
-                <div class="first-view-text">
-                    <h1>名城大学情報工学部</h1>
-                    <p>想像以上を,創造しよう.</p>
-                    <div class="lead">
-                        <p>先進プロジェクトコースと情報工学総合コースを完備</p>
-                </div>
+            <div class="slider">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+            <div class="first-view-text">
+                <h1><ruby>松本<rt>まつもと</rt></ruby><ruby>直也<rt>なおや</rt></ruby>のホームページ</h1>
+                <p>生年月日2005年6月17日</p>
+                <div class="lead">
+                    <p>名城大学情報工学2年</p>
+                    <p>名城大学ハンドボール部所属</p>
+                    <p>誕生日2005年6月17日</p>
+                    <p>星座：双子座</p>
+                    
             </div>
         </div></main>
         <!--footer ここから-->
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
-                    <li><a href="concept.html">コンセプト</a></li>
-                    <li><a href="members.html">メンバー</a></li>
-                    <li><a href="access.html">アクセス</a></li>
+                    <li><a class = "page-link" href="concept.html">登山</a></li>
+                    <li><a class = "page-link" href="members.html">ハンドボール</a></li>
+                    <li><a class = "page-link" href="access.html">海外渡航</a></li>
                 </ul>
             </nav>
             <a class="footer-logo" href="index.html">
-                <img src="images/common/logo_footer.png" alt="ロゴ">
+                <div class="logo-surprise"></div>
             </a>
-            <p class="copyright"><small>©名城大学情報工学部(嘘)</small></p>
+            <p class="copyright"><small>研究開発リテラシー19班</small></p>
         </footer>
         <!--footer ここまで-->
     
