@@ -184,7 +184,7 @@ img {
     }
 }
 .footer {
-    color: #ffffff;
+    color: rgb(191, 191, 191);
     background-color: #24211b;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -263,17 +263,33 @@ img {
 
 .header{
     background-color: black;
-    color: #ffffff;
+    color: rgb(191, 191, 191);
 }
 
-.footer{
-    background-color: black;
-}
 .main{
     padding-top: 50px;
     padding-bottom: 50px;
     height: 800px; /* デモ用の高さ */
 }
+
+.page-link {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+.page-link:hover {
+    color: #ffffff;
+}
+
+.logo-surprise{
+    background-image:url(../images/index/直也顔写真.jpg);
+    width: 300px;
+    height: 300px;
+}
+.logo-surprise:hover {
+    animation: anime 2s ease-in-out infinite;
+    transform: scale(2);
+}
+
 /* アニメーション定義 */
 @keyframes anime {
   0% {
