@@ -64,7 +64,13 @@
 .goods-item-price {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #e74c3c;
+    color: #d4d4d4;
+}
+
+.background-image{
+    background-attachment: fixed;
+    background-image: url('../images/goods_background.jpg');
+    z-index: 100;
 }
 
 /* レスポンシブデザイン */
