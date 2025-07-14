@@ -27,6 +27,7 @@ nav.floating {
     color: #ffffff;
     font-weight: bold;
     text-shadow: 1px 1px 10px #4b2c14;
+    padding: 30px;
 }
 
 .first-view-text h1 {
@@ -123,7 +124,7 @@ img {
         top: 0;
         left: 0;
         right: 0;
-        background-color: #ffffff;
+        background-color: black;
         height: 50px;
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -183,7 +184,7 @@ img {
     }
 }
 .footer {
-    color: #ffffff;
+    color: rgb(191, 191, 191);
     background-color: #24211b;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -202,4 +203,103 @@ img {
     font-size: 14pt;
     font-weight: bold;
     margin-top: 90px;
+}
+
+/* スライダー全体 */
+.slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: -1; /* 背景に配置 */
+}
+
+/* スライダー画像 */
+.slider .image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+  ①スライド画像
+  表示する画像を定義
+*/
+.slider .image:nth-of-type(1){
+  background-image: url(../images/01.jpg);
+}
+.slider .image:nth-of-type(2){
+  animation-delay: 5s;
+  background-image: url(../images/02.jpg);
+}
+.slider .image:nth-of-type(3){
+  animation-delay: 10s;
+  background-image: url(../images/03.jpg);
+}
+.slider .image:nth-of-type(4){
+  animation-delay: 10s;
+  background-image: url(../images/04.jpg);
+}
+
+/*
+  ②アニメーション設定
+  animation-durationのみ変更
+*/
+.slider .image{
+  animation-name: anime;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;  /* ①で設定したanimation-delayを合計を挿入 */
+}
+
+.header{
+    background-color: black;
+    color: rgb(191, 191, 191);
+}
+
+.main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 800px; /* デモ用の高さ */
+}
+
+.page-link {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+.page-link:hover {
+    color: #ffffff;
+}
+
+.logo-surprise{
+    background-image:url(../images/index/直也顔写真.jpg);
+    width: 300px;
+    height: 300px;
+}
+.logo-surprise:hover {
+    animation: anime 2s ease-in-out infinite;
+    transform: scale(2);
+}
+
+/* アニメーション定義 */
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
 }
