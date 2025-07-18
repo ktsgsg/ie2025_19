@@ -195,7 +195,7 @@ img {
 
 .footer-logo {
     display: block;
-    width: 235px;
+    width: 290px;
     margin-top: 90px;
 }
 
@@ -282,8 +282,8 @@ img {
 
 .logo-surprise{
     background-image:url(../images/index/直也顔写真.jpg);
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
 }
 .logo-surprise:hover {
     animation: anime 2s ease-in-out infinite;
