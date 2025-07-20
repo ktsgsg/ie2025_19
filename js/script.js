@@ -1,22 +1,17 @@
-window.addEventListener('load', function () {
-    var $button = this.document.querySelector('.toggle-menu-button');
-    var $menu = this.document.querySelector('.header-site-menu');
+var cart = [];
 
-    $button.addEventListener('click', function () {
-        if ($menu.classList.contains('is-show')) {
-            $menu.classList.remove('is-show');
-        }
-        else {
-            $menu.classList.add('is-show');
-        }
-    });
-});
+function buy_verify(){
+    location.href = "../index.html";
+    console.log("Redirecting to Google for verification.");
+    
+}
+function close_buyingmenu(){
+    $('#buyingmenu').css('visibility', 'hidden');
+    console.log("Buying menu closed.");
+}
 
-
-$(function () {
-    $(window).scroll(function () {
-        $("nav.floating").stop().animate(
-            {"top": $(window).scrollTop() + 100},
-        500);
-    });
-});
+function buy(itemId){
+    cart[itemId] = (cart[itemId] || 0) + 1;
+    console.log("Item " + itemId + " added to cart. Total: " + cart[itemId]);
+    $('#buyingmenu').css('visibility', 'visible');
+}

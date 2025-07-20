@@ -1,0 +1,141 @@
+<html>
+    <!--プロフィール-->
+    <head>
+        <meta charset="UTF-8">
+        <title> -- グッズ -- 松本直也 | 名城大学</title>
+        <meta name="description" content="松本直也のプロフィール">
+        <meta name="viewport" content="width=device-width">
+        <!-- jQueryのCDN（公式） -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- jquery.cookie.jsのCDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="../js/script.js"></script>
+        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/goods.css" rel="stylesheet">
+        <link href="../css/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&amp;family=Shippori+Mincho&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "overlay" style="visibility:hidden;" id = "buyingmenu">
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="menu-goods-item">
+                        <button class="menu-goods-item-close-button" onclick="close_buyingmenu()">閉じる</button>
+                        <div class="menu-goods-item-image">
+                            <img src="../images/akukey.png" class="menu-goods-item-image-source" alt="オリジナルキーホルダー">
+                        </div>
+                        <div class="menu-goods-item-content">
+                            <h3 class="menu-goods-item-title">オリジナルキーホルダー</h3>
+                            <p class="menu-goods-item-description">写真入りのアクリルキーホルダーです。</p>
+                            <div class="menu-goods-item-price">¥2
+                                <select name="amount" class="menu-goods-item-amount-select" id="item01-amount">
+                                    <option value="1">1個</option>
+                                    <option value="2">2個</option>
+                                    <option value="3">3個</option>
+                                    <option value="4">4個</option>
+                                    <option value="5">5個</option>
+                                    <option value="6">6個</option>
+                                </select>
+                                <button class="menu-goods-item-buy-button" id = "item01" onclick="buy_verify()">購入する</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header ここから-->
+        <header class="header">
+            <div class="header-inner">
+                <a class="top-link page-link" href="index.html">
+                    トップページへ
+                </a>
+                <button class="toggle-menu-button"></button>
+                <div class="header-site-menu">
+                    <nav class="site-menu">
+                        <ul>
+                            <li><a class = "page-link" href="concept.html">登山</a></li>
+                            <li><a class = "page-link" href="members.html">ハンドボール</a></li>
+                            <li><a class = "page-link" href="access.html">海外渡航</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--header ここまで-->
+    <div class="background-image">
+        
+        <main class="goods-main">
+            <!-- ヒーローセクション -->
+            <div class="goods-hero">
+                <h1>オリジナルグッズ</h1>
+                <p>なおやのホームページ限定オリジナルグッズをぜひお買い求めください</p>
+            </div>
+
+            <!-- 商品グリッド -->
+            <div class="goods-grid">
+                <!-- キーホルダー -->
+                <div class="goods-item">
+                    <div class="goods-item-image">
+                        <img src="../images/akukey.png" class="goods-item-image-source" alt="オリジナルキーホルダー">
+                    </div>
+                    <div class="goods-item-content">
+                        <h3 class="goods-item-title">オリジナルキーホルダー</h3>
+                        <p class="goods-item-description">写真入りのアクリルキーホルダーです。</p>
+                        <div class="goods-item-price">¥2<button class="goods-item-buy-button" id = "item01" onclick="buy(1)">購入する</button></div>
+                    </div>
+                </div>
+                <!-- キーホルダー -->
+                <div class="goods-item">
+                    <div class="goods-item-image">
+                        <img src="../images/akukey.png" class="goods-item-image-source" alt="オリジナルキーホルダー">
+                    </div>
+                    <div class="goods-item-content">
+                        <h3 class="goods-item-title">オリジナルキーホルダー</h3>
+                        <p class="goods-item-description">写真入りのアクリルキーホルダーです。</p>
+                        <div class="goods-item-price">¥2<button class="goods-item-buy-button" id = "item01" onclick="buy(2)">購入する</button></div>
+                    </div>
+                </div>
+                <!-- キーホルダー -->
+                <div class="goods-item">
+                    <div class="goods-item-image">
+                        <img src="../images/akukey.png" class="goods-item-image-source" alt="オリジナルキーホルダー">
+                    </div>
+                    <div class="goods-item-content">
+                        <h3 class="goods-item-title">オリジナルキーホルダー</h3>
+                        <p class="goods-item-description">写真入りのアクリルキーホルダーです。</p>
+                        <div class="goods-item-price">¥2<button class="goods-item-buy-button" id = "item01" onclick="buy(3)">購入する</button></div>
+                    </div>
+                </div>
+                <!-- キーホルダー -->
+                <div class="goods-item">
+                    <div class="goods-item-image">
+                        <img src="../images/akukey.png" class="goods-item-image-source" alt="オリジナルキーホルダー">
+                    </div>
+                    <div class="goods-item-content">
+                        <h3 class="goods-item-title">オリジナルキーホルダー</h3>
+                        <p class="goods-item-description">写真入りのアクリルキーホルダーです。</p>
+                        <div class="goods-item-price">¥2<button class="goods-item-buy-button" id = "item01" onclick="buy(4)">購入する</button></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--footer ここから-->
+        <footer class="footer">
+            <nav class="site-menu">
+                <ul>
+                    <li><a class = "page-link" href="concept.html">登山</a></li>
+                    <li><a class = "page-link" href="members.html">ハンドボール</a></li>
+                    <li><a class = "page-link" href="access.html">海外渡航</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">
+                <div class="logo-surprise"></div>
+            </a>
+            <p class="copyright"><small>研究開発リテラシー19班</small></p>
+        </footer>
+        <!--footer ここまで-->
+    </div>
+</body></html>

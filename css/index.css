@@ -269,11 +269,11 @@ img {
 .main{
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 800px; /* デモ用の高さ */
+    
 }
 
 .page-link {
-    color: #4f4f4f;
+    color: #7c7c7c;
     text-decoration: none;
 }
 .page-link:hover {
@@ -287,7 +287,7 @@ img {
 }
 .logo-surprise:hover {
     animation: anime 2s ease-in-out infinite;
-    transform: scale(2);
+    filter:brightness(300%);
 }
 
 /* アニメーション定義 */
@@ -300,6 +300,6 @@ img {
   }
   100% {
     opacity: 0;
-    transform: scale(1.18);
+    
   }
 }
