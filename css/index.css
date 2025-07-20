@@ -286,7 +286,7 @@ img {
     height: 290px;
 }
 .logo-surprise:hover {
-    animation: anime 2s ease-in-out infinite;
+    animation: anime_logo 2s ease-in-out infinite;
     filter:brightness(300%);
 }
 
@@ -297,9 +297,24 @@ img {
   }
   50% {
     opacity: 1;
+    size: 200%;
   }
   100% {
     opacity: 0;
+    
+  }
+}
+
+/* アニメーション定義 */
+@keyframes anime_logo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
     
   }
 }
