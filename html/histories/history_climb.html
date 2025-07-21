@@ -6,7 +6,10 @@
         <title>松本直也 | 登山</title>
         <meta name="description" content="松本直也の登山経歴">
         <meta name="viewport" content="width=device-width">
+        <script src = "../../js/common.js"></script>
         <script src="../../js/script.js"></script>
+        <link rel="stylesheet" href="../../css/slick.css">
+        <link rel="stylesheet" href="../../css/slick-theme.css">
         <link href="../../css/common.css" rel="stylesheet">
         <link href="../../css/index.css" rel="stylesheet">
         <link href="../../css/common-sites.css" rel="stylesheet">
@@ -47,68 +50,37 @@
                     <img class="commonsite-image" src="../../images/climb/yousyouki_tozan3.jpg" alt="No Image">
                 </div>
             </section>
-
             <section class="commonsite-section">
                 <h3>今までの登山履歴</h3>
                 <p>現在、松本直也が登頂した山は、国内5座、国外3座である。</p>
                 <h4>国内</h4>
-                <div class="commonsite-image-list">
-                    <ul>
-                        <li>
-                            <div class="commonsite-bigimage">
-                            旭岳(北海道)
-                            <img src="../../images/climb/asahidake_toutyou.jpg" alt="No Image">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="commonsite-bigimage">
-                            奥穂高岳(長野県)
-                            <img src="../../images/climb/okuhodaka_toutyou.jpg" alt="No Image">
-                            </div>
-                        
-                        <li class=" commonsite-bigimage">
-                            燕岳(長野県)
-                            <img  src="../../images/climb/tubakurodake_totyuu.jpg" alt="No Image">
-                        </li>
-                        <li>
-                            <div class="commonsite-bigimage">
-                            西穂高(長野県)
-                            <img src="../../images/climb/nisihodaka_toutyou.jpg" alt="No Image">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="commonsite-bigimage">
-                            富士山(静岡県、山梨県)
-                            <img src="../../images/climb/huzisan_toutyou2.jpg" alt="No Image">
-                            </div>
-                        </li>
-                    </ul>
+                <div  class = "commonsite-image-list-wrapper">
+                    <div class="commonsite-image-list">
+                        <div class="slider-item"><img class="commonsite-slide-image" src="../../images/climb/asahidake_toutyou.jpg" alt="旭岳(北海道)"><a class = "commonsite-dsc">旭岳(北海道)</a></div>
+                        <div class="slider-item"><img class="commonsite-slide-image" src="../../images/climb/okuhodaka_toutyou.jpg" alt="奥穂高岳(長野県)"><a class = "commonsite-dsc">奥穂高岳(長野県)</a></div>
+                        <div class="slider-item"><img class="commonsite-slide-image" src="../../images/climb/tubakurodake_totyuu.jpg" alt="燕岳(長野県)"><a class = "commonsite-dsc">燕岳(長野県)</a></div>
+                        <div class="slider-item"><img class="commonsite-slide-image" src="../../images/climb/nisihodaka_toutyou.jpg" alt="西穂高(長野県)"><a class = "commonsite-dsc">西穂高(長野県)</a></div>
+                        <div class="slider-item"><img class="commonsite-slide-image" src="../../images/climb/huzisan_toutyou2.jpg" alt="富士山(静岡県、山梨県)"><a class = "commonsite-dsc">富士山(静岡県、山梨県)</a></div>
+                    </div>
                 </div>
+
                 <h4>国外</h4>
-                <div class="commonsite-image-list">
-                    <ul >
-                        <li>
-                            <div class=" commonsite-bigimage">
-                            キリマンジャロ(タンザニア)
-                            <img  src="../../images/climb/kilimanjaro_toutyou.jpg" alt="No Image">
-                            </div> 
-                        </li>
-                        
-                        <li>
-                            <div class=" commonsite-bigimage">
-                            コジオスコ山(オーストラリア)
-                            <img src="../../images/climb/kosciuszko_toutyou.jpg" alt="No Image">
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class=" commonsite-bigimage">
-                            マッターホルン(スイス、イタリア)
-                            <img src="../../images/climb/matterhorn_toutyou.jpg" alt="No Image">
-                            </div>
-                        </li>
-                    </ul>
+                <div  class = "commonsite-image-list-wrapper">
+                    <div class="commonsite-image-list">
+                        <div><img class="commonsite-slide-image" src="../../images/climb/kilimanjaro_toutyou.jpg" alt="No Image"><a class = "commonsite-dsc">キリマンジャロ(タンザニア)</a></div> 
+                        <div><img class="commonsite-slide-image" src="../../images/climb/kosciuszko_toutyou.jpg" alt="No Image"><a class = "commonsite-dsc">コジオスコ山(オーストラリア)</a></div>
+                        <div><img class="commonsite-slide-image" src="../../images/climb/matterhorn_toutyou.jpg" alt="No Image"><a class = "commonsite-dsc">マッターホルン(スイス、イタリア)</a></div>
+                    </div>
                 </div>
+                <script src = "../../js/jquery-3.7.1.min.js"></script>
+                <script src = "../../js//slick.min.js"></script>
+                <script rel="text/javascript">
+                    $('.commonsite-image-list').slick({
+                        autoplay: true,
+                        dots: true,
+                        allows: true,
+                    });
+                </script>
             </section>
         </main>
         <!--footer ここから-->

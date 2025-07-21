@@ -1,6 +1,6 @@
 .commonsite-main{
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 .commonsite-images {
@@ -23,16 +23,30 @@
 }
 
 .commonsite-image-list {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #fcf7ea;
-    border-radius: 8px;
+    overflow: hidden;
 }
 
-.commonsite-bigimage{
-    text-align: center;
-    width: 20%;
+.commonsite-image-list-wrapper {
+    width: 100%;
     height: auto;
-    margin: 10px;
+    text-align: center;
+    padding: 50px;
+}
+
+.commonsite-slide-image {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.slick-prev, .slick-next {
+    display: block !important; /* 確実に表示されるように */
+    z-index: 1000;
+}
+.commonsite-dsc{
+    font-size: small;
+    text-align: center;
 }
