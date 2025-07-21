@@ -3,6 +3,22 @@
     background-color: #ffffff;
 }
 
+.commonsite-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.commonsite-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.commonsite-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
 .commonsite-images {
     width: 20%;
     height: auto;
