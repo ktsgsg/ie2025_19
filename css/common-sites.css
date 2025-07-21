@@ -1,0 +1,38 @@
+.commonsite-main{
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.commonsite-images {
+    width: 20%;
+    height: auto;
+    display: flex;
+}
+.commonsite-image {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.commonsite-title{
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/index/背景.jpg);
+}
+
+.commonsite-image-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fcf7ea;
+    border-radius: 8px;
+}
+
+.commonsite-bigimage{
+    text-align: center;
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
