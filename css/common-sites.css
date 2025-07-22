@@ -46,10 +46,9 @@
 }
 
 .commonsite-image-list-wrapper {
-    width: 600px;
     height: auto;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .commonsite-slide-image {
@@ -57,11 +56,6 @@
     text-align: center;
     width: 500px;
     height: 300px;
-}
-
-.slick-prev, .slick-next {
-    display: block !important; /* 確実に表示されるように */
-    z-index: 1000;
 }
 .commonsite-dsc{
     text-align: center;
