@@ -46,6 +46,7 @@
 }
 
 .commonsite-image-list-wrapper {
+    width: 500px;
     height: auto;
     text-align: center;
     padding: 30px;
@@ -60,4 +61,14 @@
 .commonsite-dsc{
     text-align: center;
     font-size: small;
+}
+
+@media screen and (max-width: 500px) {
+    .commonsite-image-list-wrapper {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 30px;
+    }
+    
 }
